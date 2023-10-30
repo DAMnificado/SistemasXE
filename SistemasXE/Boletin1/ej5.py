@@ -3,7 +3,8 @@ Escribir un programa que pregunte al usuario por el número de horas trabajadas 
 el coste por hora. Después debe mostrar por pantalla la paga que le corresponde.
 """
 
-numHours = float(input("How many hours did you work?"))
-mPerHour = float(input("How much you earn per hour?"))
+def ejercicio5 (horas,coste):
+    return horas+coste
 
-print("Your salary this month ",(numHours*mPerHour))
+print(ejercicio5(4,4))
+
