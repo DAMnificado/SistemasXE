@@ -12,9 +12,9 @@ def ahorros(liquidez,interes):
 
     for i in range(1 , 4 , 1):
         total = liquidez * interes * 1
-        print(f"En una cuenta con {liquidez} euros , a {interes}% de interés fijo en el año {i} año/-s obtendrás {total}")
+        print(f"En tu cuenta con {liquidez} euros , a {interes}% de interés fijo en el {i}º año obtendrás {total} euros de beneficio")
         liquidez+=total
-    return total
+    return liquidez
 
 
-print(ahorros(100,0.04))
+print(f"La cantidad final que tendrás en tu cuenta al final del tercer año seran: {ahorros(100,0.05)} euros")
