@@ -10,8 +10,16 @@ import random
 
 numBarraTu = input("Hola buenos dias!¿Cuántas barras quieres?: ")
 
-precioNormal=float(numBarraTu) * 3.49
-precioReseso=float(numBarraTu) * 0.6
+precioBarraBuena= 3.49
+rebaja= float(3.49 * 0.6)
+precioBarraResesa = float(3.49 - rebaja)
+
+
+tuPrecioSinRebaja= float(numBarraTu) * precioBarraBuena
+tuPrecioRebajado= float(numBarraTu) * precioBarraResesa
+
+tuDescuento= tuPrecioSinRebaja - tuPrecioRebajado
+
 
 barrasAyer=random.randint(1,10)
 print(f"Ayer sobraron {barrasAyer} barras de pan")
@@ -26,9 +34,23 @@ for i in range(clientesHoy):
 
 print(f"en total han comprado {contador} barras")
 
+
 if contador >= barrasAyer:
-    print(f"Lo siento, no hay barras resesas, son{float(numBarraTu)*precioNormal} euros")
-    print(f"Te recuerdo que cada una cuesta 3,49 y has comprado {numBarraTu}")
+    print(f"Lo siento, no hay barras resesas, son: {tuPrecioSinRebaja:.2f} euros")
+    print(f"Te recuerdo que cada una cuesta {precioBarraBuena} y has comprado {numBarraTu}")
 elif barrasAyer >= clientesHoy:
-    print(f"Estás de suerte, puedes comer pan reseso, son: {float(numBarraTu)*precioReseso}")
-    print(f"Si...está algo durillo pero te estás ahorando {float(numBarraTu) * 0.6}")
+    print(f"Estás de suerte, queda pan reseso, son : {tuPrecioRebajado:.2f} euros")
+    print(f"Te recuerdo que cada barra resesa cuesta {precioBarraResesa:.2f} euros, y has comprado {numBarraTu}")
+    print(f"Si...está algo durillo pero te estás ahorando {tuDescuento:.2f} euros")
+
+    
+
+
+
+
+
+
+
+
+
+

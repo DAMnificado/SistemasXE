@@ -20,3 +20,12 @@ numPayasos=input("Cuantos payasos vendiste?: ")
 numMuñecas=input("Cuantos muñecas vendiste?: ")
 
 print(muñecas(1,1))
+
+
+
+
+
+
+
+
+
