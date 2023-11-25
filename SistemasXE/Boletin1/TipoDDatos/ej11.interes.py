@@ -8,13 +8,16 @@ pantalla la cantidad de ahorros tras el primer, segundo y tercer años. Redondea
 cada cantidad a dos decimales.
 '''
 
-def ahorros(liquidez,interes):
+def ahorros(liquidez, interes):
+    for i in range(1, 4):
+        beneficio = liquidez * (interes / 100)
+        total = liquidez + beneficio
+        print(f"En tu cuenta con {round(liquidez, 2)} euros, a {interes}% de interés fijo en el {i}º año, obtendrás {round(beneficio, 2)} euros de beneficio")
+        liquidez = total
 
-    for i in range(1 , 4 , 1):
-        total = liquidez * interes * 1
-        print(f"En tu cuenta con {liquidez} euros , a {interes}% de interés fijo en el {i}º año obtendrás {total} euros de beneficio")
-        liquidez+=total
     return liquidez
 
-
-print(f"La cantidad final que tendrás en tu cuenta al final del tercer año seran: {ahorros(100,0.05)} euros")
+liquidez = 100
+interes = 5
+total_final = ahorros(liquidez, interes)
+print(f"La cantidad final que tendrás en tu cuenta al final del tercer año será: {round(total_final, 2)} euros")

@@ -3,8 +3,8 @@ Escribir un programa que pregunte al usuario por el número de horas trabajadas 
 el coste por hora. Después debe mostrar por pantalla la paga que le corresponde.
 """
 
-def ejercicio5 (horas,coste):
-    return horas+coste
+def calculoSueldo (horas, dineroXHora):
+    return horas*dineroXHora
 
-print(ejercicio5(4,4))
+print(calculoSueldo(8, 10))
 

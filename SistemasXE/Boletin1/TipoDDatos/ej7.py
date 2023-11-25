@@ -11,7 +11,7 @@ peso = float(input("Dime tu peso: "))
 altura = float(input("Dime tu estatura: "))
 
 imc=peso*altura
-print(imc)
+print("Tu masa corporal es: " , imc)
 
 
 

@@ -16,12 +16,12 @@ def muñecas(numPayasos, numMuñecas):
     pesoTotal = (numPayasos*112) + (numMuñecas*75)
     return pesoTotal
 
-numPayasos=input("Cuantos payasos vendiste?: ")
-numMuñecas=input("Cuantos muñecas vendiste?: ")
+numPayasos=int(input("Cuantos payasos vendiste?: "))
+numMuñecas=int(input("Cuantos muñecas vendiste?: "))
 
-print(muñecas(1,1))
+pestoTotal=muñecas(numPayasos,numMuñecas)
 
-
+print(f"El peso total del paquete será {pestoTotal} g")
 
 
 

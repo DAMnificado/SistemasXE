@@ -11,12 +11,19 @@ def ejercicio6 (num):
 print(int(ejercicio6(5)))
 '''
 
+def ej6(numero):
 
 
-def eje6(numero):
-    auxi=0
-    for i in range(1, numero+1):
-        auxi+=i
-        print(i)
-    print(auxi)
-eje6(5)
+
+    numero = 5
+    aux = 0
+    expresion = ""
+
+    for i in range(1, numero + 1):
+        aux += i
+        expresion += str(i) + "+"
+
+    print(expresion[:-1], "= " + str(aux))
+    'print(expresion[:-1], "=" , aux)'
+
+ej6(5)

@@ -6,9 +6,14 @@ son el cociente y el resto de la división entera respectivamente.
 '''
 
 
+n = float(input("Dime un numero: "))
+m = float(input("Dime un numero: "))
+
 def ejercicio8(n, m):
     div = n / m
     resto = n % m
-    return f"Division: {div} , resto: {resto}"
+    return f'Resultado de la división tus números: {div} , resto de la operación: {resto}'
 
-print(ejercicio8(10, 2))
+print(ejercicio8(n, m))
+
+
