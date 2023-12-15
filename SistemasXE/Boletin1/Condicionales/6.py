@@ -20,3 +20,4 @@ else:
 
 # Mostrar el grupo al que pertenece el usuario
 print(f"Usted pertenece al grupo {grupo}.")
+print(f"La longitud de mi berga es {nombre.__len__()}")

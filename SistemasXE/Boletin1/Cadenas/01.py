@@ -26,5 +26,5 @@ def obtener_numero_positivo():
 nombre_usuario = obtener_nombre_valido()
 numero_repeticiones = obtener_numero_positivo()
 
-for i in range(numero_repeticiones):
+for _ in range(numero_repeticiones):
     print(nombre_usuario)

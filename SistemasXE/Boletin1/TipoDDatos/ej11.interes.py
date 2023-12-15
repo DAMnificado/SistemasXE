@@ -9,6 +9,7 @@ cada cantidad a dos decimales.
 '''
 
 def ahorros(liquidez, interes):
+
     for i in range(1, 4):
         beneficio = liquidez * (interes / 100)
         total = liquidez + beneficio
